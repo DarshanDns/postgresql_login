@@ -19,7 +19,7 @@ loginForm.addEventListener('submit', async e => {
             if (response.ok) {
                 const data = await response.json();
                 localStorage.setItem('token', data.token);
-                alert('Login successful!');
+                alert('Login successful!!!');
                 // window.location.href = '/dashboard'; // I should create a page for landing
             } else {
                 const errorMessage = await response.text();
